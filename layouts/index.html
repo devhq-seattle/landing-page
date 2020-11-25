@@ -1,0 +1,19 @@
+{{- define "main" -}}
+<div class="main-container">
+  {{- partial "navigation" . -}}
+  {{- partial "header" . -}}
+  <div class="container">
+    <div class="padder">
+      {{- partial "modules/text-groups" . -}}
+      {{- partial "modules/projects" . -}}
+    </div>
+    <div style="text-align:center;">
+      <iframe src="https://calendar.google.com/calendar/embed?src=c_sec7hep6h4n35nuok6nlb8j2uc%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+        style="border: 0; height: 500px; width: 100%; min-width: 360px; max-width: 600px;"
+        frameborder="0"
+        scrolling="no"></iframe>
+      <iframe src="https://discordapp.com/widget?id=780693534990270536&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </div>
+</div>
+{{- end -}}

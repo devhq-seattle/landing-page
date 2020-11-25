@@ -1,0 +1,17 @@
+{{$header := .Params.header}}
+<div class="header">
+  <div class="container">
+    <div class="padder">
+      <div class="main-description animated fadeIn">
+        {{- with $header.description -}}
+          <h1 class="break-word">
+            <mark style="background-color:#ffffff;opacity:0.85;">
+              {{- . | safeHTML -}}
+            </mark>
+          </h1>
+        {{- end -}}
+        {{- partial "modules/image" (dict "image" $header.image "page" .) -}}
+      </div>
+    </div>
+  </div>
+</div>
